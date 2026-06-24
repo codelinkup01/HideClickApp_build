@@ -1,0 +1,1 @@
+import{r as t,j as s}from"./index-hSEsVzeB.js";import{s as e}from"./socket-DG6M1aDB.js";const l=()=>{const[c,o]=t.useState([]),r=JSON.parse(localStorage.getItem("user"));return t.useEffect(()=>(e.emit("join",`${r.id}`),e.on("new_click",i=>{}),()=>{e.off("new_click")}),[]),s.jsx("div",{children:s.jsx("h2",{children:"Realtime Clicks"})})};export{l as default};
